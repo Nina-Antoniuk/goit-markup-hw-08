@@ -1,0 +1,28 @@
+.flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+.flex-item {
+  margin-bottom: 60px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+    width: calc((50% - 45px) / 2);
+
+    &:last-child {
+      flex-grow: 1;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.hero {
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--light-text-color);
+}
+
+.hero__conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  height: 400px;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/studio/hero/mobile/hero.jpg);
+  background-size: cover;
+  background-position: top center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/studio/hero/mobile/hero@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/studio/hero/tablet/hero.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/studio/hero/tablet/hero@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/studio/hero/desktop/hero.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/studio/hero/desktop/hero@2x.jpg);
+    }
+  }
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
