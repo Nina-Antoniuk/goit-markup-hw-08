@@ -702,18 +702,18 @@ address {
   }
 }
 
-.flex-item {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.flex-item:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 1199px) {
+  .flex-item {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .flex-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .flex-item {
-    margin-bottom: 0;
     margin-right: 30px;
     width: calc((50% - 45px) / 2);
   }
