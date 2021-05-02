@@ -18,6 +18,10 @@
 }
 
 .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0) scale(1);
   padding: 40px;
   background-color: #fff;
   opacity: 1;
@@ -25,13 +29,16 @@
     transform var(--duration) var(--cubic);
 
   @media screen and (min-width: 480px) {
-    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%) scale(1);
+    transform: translate(-50%, -35%) scale(1);
   }
 
   @media screen and (min-width: 768px) {
+    transform: translate(-50%, -35%) scale(1);
+  }
+
+  @media screen and (min-width: 1200px) {
     transform: translate(-50%, -50%) scale(1);
   }
 
@@ -41,35 +48,23 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(0.6);
   }
+}
 
-  &__btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
 
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--light-text-color);
-    cursor: pointer;
-  }
-
-  &__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--title-text-color);
-
-    @media screen and (min-width: 1200px) {
-      line-height: 1.15;
-    }
-  }
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--light-text-color);
+  cursor: pointer;
 }
 
 .modal__btn-icon {
@@ -82,5 +77,17 @@
   .modal__btn:hover &,
   .modal__btn:focus & {
     fill: var(--text-accent);
+  }
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
   }
 }
