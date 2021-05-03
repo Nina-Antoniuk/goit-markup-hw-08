@@ -40,7 +40,11 @@
 
 .mobile-contacts {
   margin-top: auto;
-  margin-bottom: 64px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 64px;
+  }
 }
 
 .mobile-contacts__item {
