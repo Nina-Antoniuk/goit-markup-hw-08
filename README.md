@@ -1,12 +1,13 @@
-# Homework 8
+# Домашне завдання 8
+## Тема: адаптивна верстка, адаптивні зображення
 Завдання виконано відповідно до ТЗ - https://github.com/goitacademy/html-css-homework/tree/master/8-responsive
 
-Технології:
+## Технології:
  - HTML;
- - SASS;
  - BEM;
+ - SASS;
+ - flexbox;
+ - svg;
  - responsive layout;
-
-Додатково:
- - prittier;
-
+ - responsive images;
+ 
